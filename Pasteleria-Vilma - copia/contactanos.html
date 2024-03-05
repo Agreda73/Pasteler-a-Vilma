@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="StyleContactanos.css">
+
+    <title>Contatanos</title>
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contactanos.html">Contacto</a></li>
+            <li><a href="Sobre nosotros.html">Acerca de</a></li>
+        </ul>
+    </header>
+
+    <div id="menuContenedor">
+    
+    </div>
+
+    <div class="container-fluid" style="background-color: var(--color-background); color: var(--color-letra);">
+        <div class="row container-fluid">
+            <section class="col-lg-6 col-md-6 col-sm-6 p-3 border-end border-bottom">
+                <h2 class="text-center mt-3 fw-lighter">
+                    Contactanos
+                </h2>
+                    <form id="formularioContacto">
+                        <div class="form-group p-2">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control input" id="name" placeholder="Ingrese su nombre" required>
+                        </div>
+                        <div class="form-group p-2">
+                            <label for="correo" class="form-label">Ingrese su e-mail</label>
+                            <input type="email" class="form-control input" id="email" placeholder="nombre@ejemplo.com"
+                                required>
+                            <small class="form-text text-muted">Este es un campo obligatorio</small>
+                        </div>
+                        <div class="form-group p-2">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control input" id="mensaje" rows="5" placeholder="Ingrese su mensaje"
+                                required></textarea>
+                        </div>
+                        <br>
+                        <button type="submit" class="ov-btn-grow-skew" id="enviar1Btn">Enviar</button>
+                    </form>
+               
+            </section>
+            <section class="col-lg-6 col-md-6 col-sm-6 p-3 border-start border-bottom">
+                <h2 class="text-center mt-3 fw-lighter">
+                    Reportes
+                </h2>
+                <!-- Segundo Formulario -->
+                <form id="Form">
+                    <div class="form-group p-2">
+                        <label for="Name" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control input" id="Name" placeholder="Ingrese su nombre completo"
+                            required>
+                    </div>
+                    <div class="form-group p-2">
+                        <label for="email1">Ingrese su E-mail:</label>
+                        <input type="email" class="form-control input" id="email1" placeholder="Ingrese su Email" required>
+                        <small class="form-text text-muted">Este es un campo obligatorio</small>
+                    </div>
+                    <h3 class="text-center fw-lighter">
+                        ¿Qué inconveniente presentas?
+                    </h3>
+                    <div class="form-group">
+                        <select id="problem" class="form-select form-select-sm input" required>
+                            <option value="0" >SELECCIONE El INCONVENIENTE </option>
+                            <option value="1" > </option>
+                            <option value="2" > </option>
+                            <option value="3" > </option>
+                            <option value="4" > </option>
+                            <option value="5" > </option>
+                        </select>
+                    </div>
+                    <div class="form-group p-3">
+                        <small class="form-text text-muted">Otro:</small>
+                        <textarea class="form-control input p-3 ml-3" id="problemTextArea" rows="1"></textarea>
+                    </div>
+                    <br>
+                    <button type="submit" class="ov-btn-grow-skew" id="ProblemBtn">Enviar</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <div id="ContenedorFooter">
+    </div>
+
+</body>
+</html>
