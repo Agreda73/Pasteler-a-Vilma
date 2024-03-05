@@ -1,0 +1,44 @@
+#menuContenedor {
+    /* se agregara el estilo */
+}
+
+#formularioContacto {
+    margin-top: 20px;
+}
+
+.input {
+    width: 100%;
+}
+
+#enviar1Btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#enviar1Btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el formulario de reportes */
+#Form {
+    margin-top: 20px;
+}
+
+#problemTextArea {
+    width: calc(100% - 25px);
+}
+
+#ProblemBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#ProblemBtn:hover {
+    background-color: #0056b3;
+}
