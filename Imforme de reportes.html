@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes</title>
+
+</head>
+<body>
+    <header id="head"> 
+        <nav class="navbar fixed-top s" class="menu">
+          <div class="container-fluid">
+            <h1 class="text-white navbar-brand">Pasteleria Vilma</h1>
+            <button class="bg-white navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class=" navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: rgb(246, 161, 175);">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body" style="background-color: rgb(255, 192, 203);">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sobre nosotros.html">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contactanos</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="contactanos.html">Enviar un comentario</a></li>
+                      <li><a class="dropdown-item" href="reportar un problem.html">Reportar un problema</a></li>
+                      <li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <button class="btn btn-outline-primary" type="ir"style=""><a href="login.html">Iniciar sesión</a></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <!-- Segundo Formulario -->
+    <section class="col-lg-6 col-md-6 col-sm-6 p-3 border-start border-bottom">
+        <h2 class="text-center mt-3 fw-lighter">
+            Reportes
+        </h2>
+    <form id="Form">
+        <div class="form-group p-2">
+            <label for="Name" class="form-label">Nombre:</label>
+            <input type="text" class="form-control input" id="Name" placeholder="Ingrese su nombre completo"
+                required>
+        </div>
+        <div class="form-group p-2">
+            <label for="email1">Ingrese su E-mail:</label>
+            <input type="email" class="form-control input" id="email1" placeholder="Ingrese su Email" required>
+            <small class="form-text text-muted">Este es un campo obligatorio</small>
+        </div>
+        <h3 class="text-center fw-lighter">
+            ¿Qué inconveniente presentas?
+        </h3>
+        <div class="form-group">
+            <select id="problem" class="form-select form-select-sm input" required>
+                <option value="0" >SELECCIONE El INCONVENIENTE </option>
+                <option value="1" > </option>
+                <option value="2" > </option>
+                <option value="3" > </option>
+                <option value="4" > </option>
+                <option value="5" > </option>
+            </select>
+        </div>
+        <div class="form-group p-3">
+            <small class="form-text text-muted">Otro:</small>
+            <textarea class="form-control input p-3 ml-3" id="problemTextArea" rows="1"></textarea>
+        </div>
+        <br>
+        <button type="submit" class="ov-btn-grow-skew" id="ProblemBtn">Enviar</button>
+    </form>
+</section>
+</div>
+</div>
+<div id="ContenedorFooter">
+</div>
+</body>
+</html>
